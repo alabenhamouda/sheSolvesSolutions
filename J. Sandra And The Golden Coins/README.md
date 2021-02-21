@@ -22,13 +22,14 @@ time complexity of this solution is O(n log n)
 # Two Pointers Solution
 
 We can find an even better solution using two pointers l and r.
-start with l = 1 and r = 1, then while the sum of elements from l to r < S, keep incrementing r. <\br>
-We have now a range of elements from l to r that add up to at least S. </br>
+start with l = 1 and r = 1, then while the sum of elements from l to r < S, keep incrementing r.<br>
+We have now a range of elements from l to r that add up to at least S. <br>
 We loop now until r > n:
 1. if sum of elements between l and r (inclusive) >= S then simply shift the range to the right by 1 (increment l and r by 1)
 2. otherwise the sum of elements between l and r < S, then decrement l by 1 (l--) thus expanding the range by one, we are sure that we have 
 	to decrement l only by one because we know from the previous step that the sum of elements from (l - 1) to (r - 1) is already greater than or equal 
 	to S.
+
 When the loop exists (r > n) the result is the number of elements between l and r, that is r - l + 1.
 
 time complexity of this solution is O(n)
