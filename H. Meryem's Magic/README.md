@@ -26,5 +26,23 @@ sum now is odd. this can only happen when one of them is even
 and the only even prime is 2 so we have to verify if n-2 is prime
 if yes then p1=2 p2=n-2
 
+## implementation
 
+under our constraints solutions having up to O($n^2$) will be accepted
 
+### filling array with primes up to n
+
+we can check every number from 1 to n  if it's prime or not in O($n^2$)  
+
+we can use the sieve of erasthones algorithm to improve the efficiency to O(nlog(log(n))) which is practically the same as O(n)
+for filling an array with primes up to n  
+
+### finding two pointers that sum to n
+
+to find the primes we can use:
+    -nested for loops :O($n^2$)
+    -sets : O(nlogn)
+    -twopointers :O(n)
+
+and hence our best algorithm can have up to O(n log(log(n)))  
+which is practiacally O(n)
