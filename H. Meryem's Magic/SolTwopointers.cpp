@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <cstdio>
 const long long INF = 1e5 + 7;
 typedef long long ll;
 #define lp(n) for (int i = 0; i < (n); i++)
@@ -82,10 +81,6 @@ void solve ()
     }
     // print the last two primes
     cout << s << *it1 << " " << *it2 << endl;
-    /*
-     * solve() has a complexity of O(n)
-     * sieve=O(n)+two_pointers_over_the_number_of_primes=O(n/ln(n))
-     */
 }
 
 int main ()

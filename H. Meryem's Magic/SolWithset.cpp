@@ -1,11 +1,9 @@
-#include <algorithm>
 #include <bits/stdc++.h>
 const long long INF = 1e5 + 7;
 typedef long long ll;
 #define lp(n) for (int i = 0; i < (n); i++)
 using namespace std;
 vector<bool> prime (INF, true);
-// prime must be a vector if n=1e7
 vector<ll> v;
 // v containes the prime numbers in increasing order
 
@@ -24,7 +22,6 @@ ll n, k;
 
 string handle ()
 {
-    // i still have doubts about this
     string s = "";
     if (n % 2 == 0) {
         n -= max (0ll, k - 2) * 2;
@@ -76,10 +73,6 @@ void solve ()
         return;
     }
     cout << "Impossible\n";
-    /*
-     * solve() has a complexity of O(n)
-     * sieve=O(n)+O(nlogn/ln(n))
-     */
 }
 
 int main ()
