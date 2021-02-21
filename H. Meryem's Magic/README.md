@@ -30,7 +30,7 @@ under our constraints solutions having up to O(n^2) will be accepted
 
 ## filling array with primes up to n
 
-we can check every number from 1 to n  if it's prime or not in O(n^2)
+we can check every number from 1 to n  if it's prime or not in O(n^2) with nested loops
 
 we can use the sieve of eratosthenes algorithm to improve the efficiency to O(nlog(log(n))) which is practically the same as O(n)
 for filling an array with primes up to n
