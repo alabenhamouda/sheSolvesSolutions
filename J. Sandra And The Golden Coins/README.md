@@ -30,7 +30,7 @@ We loop now until r > n:
 	to decrement l only by one because we know from the previous step that the sum of elements from (l - 1) to (r - 1) is already greater than or equal 
 	to S.
 
-When the loop exists (r > n) the result is the number of elements between l and r, that is r - l + 1.
+When the loop exits (r > n) the result is the number of elements between l and r, that is r - l + 1.
 
 time complexity of this solution is O(n)
 
